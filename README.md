@@ -6,11 +6,11 @@
 
 <!-- Hero badges -->
 <p align="center">
-  <a href="https://github.com/YOUR_USERNAME">
-    <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&include_all_commits=true" alt="GitHub stats">
+  <a href="https://github.com/NullMeDev">
+    <img src="https://github-readme-stats.vercel.app/api?username=NullMeDev&show_icons=true&include_all_commits=true" alt="GitHub stats">
   </a>
-  <a href="https://github.com/YOUR_USERNAME">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&langs_count=10" alt="Top languages">
+  <a href="https://github.com/NullMeDev">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NullMeDev&layout=compact&langs_count=10" alt="Top languages">
   </a>
 </p>
 
@@ -20,9 +20,9 @@
 </p>
 
 ## Featured Projects
-- 🔐 **Noxhime Sentinel** — Autonomous server watchdog with Discord alerting  
-- 🌀 **Infopulse Node** — Fast Go service core for data pipelines  
-- 🎯 **DaemonKey Rotator** — Scheduled secret rotation with audit trail
+- **Noxhime Sentinel** — Autonomous server watchdog with Discord alerting  
+- **Infopulse Node** — Fast Go service core for data pipelines  
+- **DaemonKey Rotator** — Scheduled secret rotation with audit trail
 
 ## Recent Work
 - Security hardening on Ubuntu 24.04  
@@ -31,4 +31,4 @@
 
 ## Get in touch
 - Site: https://NullMeDev.github.io
-- X/Twitter: @yourhandle
+- X/Twitter: @NullMeDev
