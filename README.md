@@ -1,16 +1,34 @@
-## Hi there 👋
+<!-- Profile Header -->
+<h1 align="center">Null — Building secure, beautiful systems</h1>
+<p align="center">
+  <i>Programmer • Security-minded • Tools that ship</i>
+</p>
 
-<!--
-**NullMeDev/NullMeDev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- Hero badges -->
+<p align="center">
+  <a href="https://github.com/YOUR_USERNAME">
+    <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&include_all_commits=true" alt="GitHub stats">
+  </a>
+  <a href="https://github.com/YOUR_USERNAME">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&langs_count=10" alt="Top languages">
+  </a>
+</p>
 
-Here are some ideas to get you started:
+<!-- Deep-dive metrics block injected by GitHub Actions -->
+<p align="center">
+  <img src="./.cache/profile-metrics.svg" alt="Comprehensive profile metrics">
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Featured Projects
+- 🔐 **Noxhime Sentinel** — Autonomous server watchdog with Discord alerting  
+- 🌀 **Infopulse Node** — Fast Go service core for data pipelines  
+- 🎯 **DaemonKey Rotator** — Scheduled secret rotation with audit trail
+
+## Recent Work
+- Security hardening on Ubuntu 24.04  
+- Encrypted backup flows with rclone + Hetzner  
+- GUI polishing for login portals and dashboards
+
+## Get in touch
+- Site: https://YOUR_USERNAME.github.io
+- X/Twitter: @yourhandle
