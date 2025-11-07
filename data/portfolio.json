@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-07T02:01:25.342Z",
+  "generatedAt": "2025-11-07T03:49:31.649Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -45,8 +45,8 @@
       "language": "Rust",
       "stars": 0,
       "views14d": {
-        "count": 1,
-        "uniques": 1
+        "count": 2,
+        "uniques": 2
       }
     },
     {
@@ -428,7 +428,7 @@
     }
   ],
   "totals": {
-    "views14d": 82,
-    "uniques14d": 30
+    "views14d": 83,
+    "uniques14d": 31
   }
 }
