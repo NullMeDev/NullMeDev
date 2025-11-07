@@ -64,17 +64,17 @@ function section(titleText) {
 
 function hero() {
   const wrap = el("div", "hero");
-  const title = el("h1", null, SITE.name);
+  const title = el("h1", null, `🌟 ${SITE.name} 🌟`);
   const bio = el("div", "subtitle", SITE.bio);
   const contacts = el("div", "pills");
-  contacts.appendChild(pill(`Email: ${SITE.email}`));
-  contacts.appendChild(pill(`Location: ${SITE.location}`));
-  contacts.appendChild(pill(`Website: ${SITE.website}`));
+  contacts.appendChild(pill(`📧 ${SITE.email}`));
+  contacts.appendChild(pill(`📍 ${SITE.location}`));
+  contacts.appendChild(pill(`🌐 ${SITE.website}`));
   wrap.appendChild(title);
   wrap.appendChild(bio);
   wrap.appendChild(contacts);
   const actions = el("div", "pills");
-  const btn = el("button", "btn", "View All Projects");
+  const btn = el("button", "btn", "✨ View All Projects ✨");
   btn.addEventListener("click", () => {
     document.getElementById("all-projects").scrollIntoView({ behavior: "smooth", block: "start" });
   });
@@ -164,20 +164,20 @@ async function loadData() {
 
     // KPI
     const kpiSection = el("div", "card");
-    kpiSection.appendChild(el("h2", "section-title", "Site Stats (last 14 days)"));
+    kpiSection.appendChild(el("h2", "section-title", "📊 Site Stats (last 14 days)"));
     const kpiWrap = el("div", "kpi");
-    kpiWrap.appendChild(kpiCard("Total views", data.totals.views14d || 0));
-    kpiWrap.appendChild(kpiCard("Unique visitors", data.totals.uniques14d || 0));
+    kpiWrap.appendChild(kpiCard("👁️ Total views", data.totals.views14d || 0));
+    kpiWrap.appendChild(kpiCard("👥 Unique visitors", data.totals.uniques14d || 0));
     kpiSection.appendChild(kpiWrap);
     container.appendChild(kpiSection);
 
     // Featured
-    const featuredSection = section("Featured Projects");
+    const featuredSection = section("⭐ Featured Projects");
     featuredSection.root.appendChild(featuredCards());
     container.appendChild(featuredSection.root);
 
     // Skills
-    const skillsSection = section("Skills and Tech");
+    const skillsSection = section("💻 Skills & Tech Stack");
     const skills = ["Rust","Go","Python","TypeScript","JavaScript","C#","PowerShell","HTML"];
     const badgesDiv = el("div", "badges");
     skills.forEach(s => {
@@ -188,7 +188,7 @@ async function loadData() {
     container.appendChild(skillsSection.root);
 
     // All projects (only with valid README)
-    const gallery = section("All Projects");
+    const gallery = section("📦 All Projects");
     gallery.root.id = "all-projects";
     const grid = el("div", "grid");
     (data.projects || []).forEach(p => grid.appendChild(projectCard(p)));

@@ -18,14 +18,14 @@ Just here having fun, coming up with some ideas and making them into programs.
 
 ## 💻 Tech Stack
 
-![Rust](https://img.shields.io/badge/Rust-pastel-ffd5ea?style=for-the-badge&logo=rust&logoColor=000000)
-![Go](https://img.shields.io/badge/Go-pastel-d9fff2?style=for-the-badge&logo=go&logoColor=000000)
-![Python](https://img.shields.io/badge/Python-pastel-d9f2ff?style=for-the-badge&logo=python&logoColor=000000)
-![TypeScript](https://img.shields.io/badge/TypeScript-pastel-e9dcff?style=for-the-badge&logo=typescript&logoColor=000000)
-![JavaScript](https://img.shields.io/badge/JavaScript-pastel-ffe5d1?style=for-the-badge&logo=javascript&logoColor=000000)
-![C#](https://img.shields.io/badge/C%23-pastel-ffd5ea?style=for-the-badge&logo=csharp&logoColor=000000)
-![PowerShell](https://img.shields.io/badge/PowerShell-pastel-d9f2ff?style=for-the-badge&logo=powershell&logoColor=000000)
-![HTML](https://img.shields.io/badge/HTML-pastel-ffe5d1?style=for-the-badge&logo=html5&logoColor=000000)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white&labelColor=ffe5d1)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white&labelColor=d9fff2)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=d9f2ff)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=e9dcff)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=ffe5d1)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white&labelColor=ffd5ea)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white&labelColor=d9f2ff)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=ffe5d1)
 
 ## 📊 GitHub Stats
 
