@@ -1,18 +1,9 @@
 {
-  "name": "github-portfolio-pro",
-  "version": "2.0.0",
+  "name": "nullmedev-portfolio",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsx src/build.ts",
-    "serve": "http-server public -p 4173 -o"
-  },
-  "dependencies": {
-    "octokit": "^4.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "^22.5.0",
-    "http-server": "^14.1.1",
-    "tsx": "^4.15.7"
+    "build:data": "node scripts/build-data.js"
   }
 }
