@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-07T03:49:31.649Z",
+  "generatedAt": "2025-11-08T03:42:33.008Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -45,8 +45,34 @@
       "language": "Rust",
       "stars": 0,
       "views14d": {
-        "count": 2,
+        "count": 14,
         "uniques": 2
+      }
+    },
+    {
+      "name": "system-prompts-and-models-of-ai-tools",
+      "description": "FULL v0, Cursor, Manus, Same.dev, Lovable, Devin, Replit Agent, Windsurf Agent, VSCode Agent, Dia Browser, Xcode, Trae AI, Cluely & Orchids.app (And other Open Sourced) System Prompts, Tools & AI Models.",
+      "private": false,
+      "hasReadme": true,
+      "html_url": "https://github.com/NullMeDev/system-prompts-and-models-of-ai-tools",
+      "language": null,
+      "stars": 0,
+      "views14d": {
+        "count": 2,
+        "uniques": 1
+      }
+    },
+    {
+      "name": "skybin",
+      "description": "Pastebin Scraper/Alternative Redux",
+      "private": false,
+      "hasReadme": true,
+      "html_url": "https://github.com/NullMeDev/skybin",
+      "language": "Rust",
+      "stars": 0,
+      "views14d": {
+        "count": 7,
+        "uniques": 1
       }
     },
     {
@@ -69,19 +95,6 @@
       "hasReadme": true,
       "html_url": "https://github.com/NullMeDev/MobaXterm-Keygen",
       "language": "HTML",
-      "stars": 0,
-      "views14d": {
-        "count": 2,
-        "uniques": 1
-      }
-    },
-    {
-      "name": "system-prompts-and-models-of-ai-tools",
-      "description": "FULL v0, Cursor, Manus, Same.dev, Lovable, Devin, Replit Agent, Windsurf Agent, VSCode Agent, Dia Browser, Xcode, Trae AI, Cluely & Orchids.app (And other Open Sourced) System Prompts, Tools & AI Models.",
-      "private": false,
-      "hasReadme": true,
-      "html_url": "https://github.com/NullMeDev/system-prompts-and-models-of-ai-tools",
-      "language": null,
       "stars": 0,
       "views14d": {
         "count": 2,
@@ -305,8 +318,8 @@
       "language": "Go",
       "stars": 1,
       "views14d": {
-        "count": 5,
-        "uniques": 3
+        "count": 4,
+        "uniques": 2
       }
     },
     {
@@ -422,13 +435,13 @@
       "language": "Python",
       "stars": 0,
       "views14d": {
-        "count": 4,
-        "uniques": 4
+        "count": 3,
+        "uniques": 3
       }
     }
   ],
   "totals": {
-    "views14d": 83,
-    "uniques14d": 31
+    "views14d": 100,
+    "uniques14d": 30
   }
 }
