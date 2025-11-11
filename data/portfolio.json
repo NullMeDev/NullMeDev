@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-10T03:56:46.921Z",
+  "generatedAt": "2025-11-11T03:52:17.194Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -71,8 +71,8 @@
       "language": "Rust",
       "stars": 0,
       "views14d": {
-        "count": 22,
-        "uniques": 5
+        "count": 23,
+        "uniques": 6
       }
     },
     {
@@ -227,8 +227,8 @@
       "language": "PowerShell",
       "stars": 0,
       "views14d": {
-        "count": 4,
-        "uniques": 1
+        "count": 5,
+        "uniques": 2
       }
     },
     {
@@ -441,7 +441,7 @@
     }
   ],
   "totals": {
-    "views14d": 111,
-    "uniques14d": 32
+    "views14d": 113,
+    "uniques14d": 34
   }
 }
