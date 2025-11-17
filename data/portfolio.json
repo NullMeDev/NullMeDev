@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-16T03:54:58.140Z",
+  "generatedAt": "2025-11-17T03:55:08.769Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -136,8 +136,8 @@
       "language": null,
       "stars": 0,
       "views14d": {
-        "count": 2,
-        "uniques": 2
+        "count": 1,
+        "uniques": 1
       }
     },
     {
@@ -370,8 +370,8 @@
       "language": "TypeScript",
       "stars": 0,
       "views14d": {
-        "count": 12,
-        "uniques": 4
+        "count": 11,
+        "uniques": 3
       }
     },
     {
@@ -435,13 +435,13 @@
       "language": "Python",
       "stars": 0,
       "views14d": {
-        "count": 4,
-        "uniques": 4
+        "count": 3,
+        "uniques": 3
       }
     }
   ],
   "totals": {
-    "views14d": 143,
-    "uniques14d": 49
+    "views14d": 140,
+    "uniques14d": 46
   }
 }
