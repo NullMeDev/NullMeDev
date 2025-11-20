@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-19T03:51:02.917Z",
+  "generatedAt": "2025-11-20T03:50:01.258Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -45,8 +45,8 @@
       "language": "JavaScript",
       "stars": 0,
       "views14d": {
-        "count": 4,
-        "uniques": 2
+        "count": 1,
+        "uniques": 1
       }
     },
     {
@@ -58,7 +58,7 @@
       "language": "Rust",
       "stars": 0,
       "views14d": {
-        "count": 32,
+        "count": 31,
         "uniques": 7
       }
     },
@@ -71,7 +71,7 @@
       "language": null,
       "stars": 3,
       "views14d": {
-        "count": 22,
+        "count": 20,
         "uniques": 11
       }
     },
@@ -97,8 +97,8 @@
       "language": "HTML",
       "stars": 0,
       "views14d": {
-        "count": 2,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -110,8 +110,8 @@
       "language": "Python",
       "stars": 0,
       "views14d": {
-        "count": 2,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -123,8 +123,8 @@
       "language": "Python",
       "stars": 0,
       "views14d": {
-        "count": 3,
-        "uniques": 2
+        "count": 1,
+        "uniques": 1
       }
     },
     {
@@ -227,8 +227,8 @@
       "language": "PowerShell",
       "stars": 0,
       "views14d": {
-        "count": 1,
-        "uniques": 1
+        "count": 2,
+        "uniques": 2
       }
     },
     {
@@ -292,8 +292,8 @@
       "language": null,
       "stars": 0,
       "views14d": {
-        "count": 5,
-        "uniques": 3
+        "count": 1,
+        "uniques": 1
       }
     },
     {
@@ -318,8 +318,8 @@
       "language": "Go",
       "stars": 1,
       "views14d": {
-        "count": 7,
-        "uniques": 4
+        "count": 4,
+        "uniques": 3
       }
     },
     {
@@ -344,8 +344,8 @@
       "language": "Go",
       "stars": 0,
       "views14d": {
-        "count": 4,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -357,8 +357,8 @@
       "language": "JavaScript",
       "stars": 0,
       "views14d": {
-        "count": 12,
-        "uniques": 3
+        "count": 11,
+        "uniques": 2
       }
     },
     {
@@ -370,8 +370,8 @@
       "language": "TypeScript",
       "stars": 0,
       "views14d": {
-        "count": 11,
-        "uniques": 3
+        "count": 2,
+        "uniques": 2
       }
     },
     {
@@ -383,8 +383,8 @@
       "language": "Go",
       "stars": 0,
       "views14d": {
-        "count": 1,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -396,8 +396,8 @@
       "language": "Go",
       "stars": 0,
       "views14d": {
-        "count": 11,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -435,13 +435,13 @@
       "language": "Python",
       "stars": 0,
       "views14d": {
-        "count": 3,
-        "uniques": 3
+        "count": 2,
+        "uniques": 2
       }
     }
   ],
   "totals": {
-    "views14d": 144,
-    "uniques14d": 49
+    "views14d": 99,
+    "uniques14d": 37
   }
 }
