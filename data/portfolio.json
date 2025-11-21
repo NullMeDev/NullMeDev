@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-20T03:50:01.258Z",
+  "generatedAt": "2025-11-21T03:49:40.416Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -58,8 +58,8 @@
       "language": "Rust",
       "stars": 0,
       "views14d": {
-        "count": 31,
-        "uniques": 7
+        "count": 30,
+        "uniques": 6
       }
     },
     {
@@ -188,8 +188,8 @@
       "language": null,
       "stars": 0,
       "views14d": {
-        "count": 10,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -318,7 +318,7 @@
       "language": "Go",
       "stars": 1,
       "views14d": {
-        "count": 4,
+        "count": 9,
         "uniques": 3
       }
     },
@@ -357,8 +357,8 @@
       "language": "JavaScript",
       "stars": 0,
       "views14d": {
-        "count": 11,
-        "uniques": 2
+        "count": 1,
+        "uniques": 1
       }
     },
     {
@@ -441,7 +441,7 @@
     }
   ],
   "totals": {
-    "views14d": 99,
-    "uniques14d": 37
+    "views14d": 83,
+    "uniques14d": 34
   }
 }
