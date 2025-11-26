@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-25T03:54:57.200Z",
+  "generatedAt": "2025-11-26T03:54:11.028Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -136,8 +136,8 @@
       "language": "Python",
       "stars": 0,
       "views14d": {
-        "count": 1,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -448,13 +448,13 @@
       "language": "Python",
       "stars": 0,
       "views14d": {
-        "count": 3,
-        "uniques": 3
+        "count": 2,
+        "uniques": 2
       }
     }
   ],
   "totals": {
-    "views14d": 56,
-    "uniques14d": 34
+    "views14d": 54,
+    "uniques14d": 32
   }
 }
