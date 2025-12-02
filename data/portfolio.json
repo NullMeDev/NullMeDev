@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-01T04:18:28.503Z",
+  "generatedAt": "2025-12-02T03:58:37.812Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -71,8 +71,8 @@
       "language": "Rust",
       "stars": 0,
       "views14d": {
-        "count": 1,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -305,8 +305,8 @@
       "language": null,
       "stars": 0,
       "views14d": {
-        "count": 1,
-        "uniques": 1
+        "count": 0,
+        "uniques": 0
       }
     },
     {
@@ -331,8 +331,8 @@
       "language": "Go",
       "stars": 1,
       "views14d": {
-        "count": 8,
-        "uniques": 2
+        "count": 6,
+        "uniques": 1
       }
     },
     {
@@ -454,7 +454,7 @@
     }
   ],
   "totals": {
-    "views14d": 46,
-    "uniques14d": 24
+    "views14d": 42,
+    "uniques14d": 21
   }
 }
