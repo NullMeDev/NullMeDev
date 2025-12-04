@@ -1,6 +1,6 @@
 # NullMeDev
 
-Just here having fun, coming up with some ideas and making them into programs.
+Just here having fun, coming up with some ideas and making them into programs, Obnsessive Compulsive, ADHD coder, honestly hit creative blocks all the time, so here I am publishing the ideas that give me the biggest dopamine boost. 
 
 ## 📫 Contact & Info
 
@@ -10,12 +10,12 @@ Just here having fun, coming up with some ideas and making them into programs.
 
 ## ⭐ Featured Projects
 
-- **Skylock** (Rust/HTML) — [View Project](https://github.com/NullMeDev/Skylock) 
-- ** Skybin** (Rust/HTML) — [View Project](https://github.com/NullMeDev/skybin)
-- **Noxhime** (TypeScript) — [View Project](https://github.com/NullMeDev/Noxhime)
-- **EMILY** (Go) — [View Project](https://github.com/NullMeDev/EMILY) ()
-- **LUMA** (Go) — [View Project](https://github.com/NullMeDev/LUMA) ()
-- **ESETGen** (Python) — Contributing factor (no README)
+✨ Skylock (Rust/HTML) — [View Project](https://github.com/NullMeDev/Skylock) 
+✨ Skybin (Rust/HTML) — [View Project](https://github.com/NullMeDev/skybin)
+✨ Noxhime (TypeScript) — [View Project](https://github.com/NullMeDev/Noxhime)
+✨ EMILY (Go) — [View Project](https://github.com/NullMeDev/EMILY) ()
+✨ LUMA (Go) — [View Project](https://github.com/NullMeDev/LUMA) ()
+✨ ESETGen (Python) — Contributing factor (no README)
 
 ## 💻 Tech Stack
 
