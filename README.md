@@ -5,15 +5,16 @@ Just here having fun, coming up with some ideas and making them into programs.
 ## 📫 Contact & Info
 
 - **Location:** USA
-- **Website:** https://nullme.lol
-- **Contact:** null@nullme.lol
+- **Website:** https://skybin.lol
+- **Contact:** nullxox0@pm.me
 
 ## ⭐ Featured Projects
 
-- **Skylock** (Rust) — Private
+- **Skylock** (Rust/HTML) — [View Project](https://github.com/NullMeDev/Skylock) 
+- ** Skybin** (Rust/HTML) — [View Project](https://github.com/NullMeDev/skybin)
 - **Noxhime** (TypeScript) — [View Project](https://github.com/NullMeDev/Noxhime)
-- **EMILY** (Go) — [View Project](https://github.com/NullMeDev/EMILY)
-- **LUMA** (Go) — [View Project](https://github.com/NullMeDev/LUMA)
+- **EMILY** (Go) — [View Project](https://github.com/NullMeDev/EMILY) ()
+- **LUMA** (Go) — [View Project](https://github.com/NullMeDev/LUMA) ()
 - **ESETGen** (Python) — Contributing factor (no README)
 
 ## 💻 Tech Stack
@@ -42,5 +43,5 @@ Explore the full portfolio with project view counts and more details:
 ---
 
 <div align="center">
-  <sub>Built with ♥ using GitHub Pages | Updated daily via GitHub Actions</sub>
+  <sub>Built with ♥ By NullMeDev | Updated daily via GitHub Actions</sub>
 </div>
