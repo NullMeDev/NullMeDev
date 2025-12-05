@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-04T03:58:34.013Z",
+  "generatedAt": "2025-12-05T03:57:26.694Z",
   "owner": "NullMeDev",
   "featured": [
     {
@@ -45,21 +45,8 @@
       "language": "Rust",
       "stars": 0,
       "views14d": {
-        "count": 0,
-        "uniques": 0
-      }
-    },
-    {
-      "name": "MobaXterm-Keygen",
-      "description": "MobaXterm Key Generate",
-      "private": false,
-      "hasReadme": true,
-      "html_url": "https://github.com/NullMeDev/MobaXterm-Keygen",
-      "language": "HTML",
-      "stars": 0,
-      "views14d": {
-        "count": 3,
-        "uniques": 3
+        "count": 21,
+        "uniques": 1
       }
     },
     {
@@ -71,8 +58,8 @@
       "language": "JavaScript",
       "stars": 0,
       "views14d": {
-        "count": 0,
-        "uniques": 0
+        "count": 5,
+        "uniques": 1
       }
     },
     {
@@ -89,6 +76,45 @@
       }
     },
     {
+      "name": "cursor-free-vip",
+      "description": "[Support 0.48.x]（Reset Cursor AI MachineID & Auto Sign Up / In & Bypass Higher Token Limit）自动注册 Cursor Ai ，自动重置机器ID ， 免费升级使用Pro功能: You've reached your trial request limit. / Too many free trial accounts used on this machine. Please upgrade to pro. We have this limit in place to prevent abuse. Please let us know if you believe this is a mistake.",
+      "private": false,
+      "hasReadme": true,
+      "html_url": "https://github.com/NullMeDev/cursor-free-vip",
+      "language": "Python",
+      "stars": 0,
+      "views14d": {
+        "count": 2,
+        "uniques": 1
+      }
+    },
+    {
+      "name": "millama",
+      "description": "If you hate your friends then use llm",
+      "private": false,
+      "hasReadme": true,
+      "html_url": "https://github.com/NullMeDev/millama",
+      "language": null,
+      "stars": 0,
+      "views14d": {
+        "count": 2,
+        "uniques": 1
+      }
+    },
+    {
+      "name": "MobaXterm-Keygen",
+      "description": "MobaXterm Key Generate",
+      "private": false,
+      "hasReadme": true,
+      "html_url": "https://github.com/NullMeDev/MobaXterm-Keygen",
+      "language": "HTML",
+      "stars": 0,
+      "views14d": {
+        "count": 3,
+        "uniques": 3
+      }
+    },
+    {
       "name": "system-prompts-and-models-of-ai-tools",
       "description": "FULL v0, Cursor, Manus, Same.dev, Lovable, Devin, Replit Agent, Windsurf Agent, VSCode Agent, Dia Browser, Xcode, Trae AI, Cluely & Orchids.app (And other Open Sourced) System Prompts, Tools & AI Models.",
       "private": false,
@@ -97,7 +123,7 @@
       "language": null,
       "stars": 3,
       "views14d": {
-        "count": 8,
+        "count": 11,
         "uniques": 5
       }
     },
@@ -110,8 +136,8 @@
       "language": "CSS",
       "stars": 0,
       "views14d": {
-        "count": 5,
-        "uniques": 2
+        "count": 9,
+        "uniques": 4
       }
     },
     {
@@ -120,19 +146,6 @@
       "private": false,
       "hasReadme": true,
       "html_url": "https://github.com/NullMeDev/awesome-llm-apps",
-      "language": "Python",
-      "stars": 0,
-      "views14d": {
-        "count": 0,
-        "uniques": 0
-      }
-    },
-    {
-      "name": "cursor-free-vip",
-      "description": "[Support 0.48.x]（Reset Cursor AI MachineID & Auto Sign Up / In & Bypass Higher Token Limit）自动注册 Cursor Ai ，自动重置机器ID ， 免费升级使用Pro功能: You've reached your trial request limit. / Too many free trial accounts used on this machine. Please upgrade to pro. We have this limit in place to prevent abuse. Please let us know if you believe this is a mistake.",
-      "private": false,
-      "hasReadme": true,
-      "html_url": "https://github.com/NullMeDev/cursor-free-vip",
       "language": "Python",
       "stars": 0,
       "views14d": {
@@ -331,8 +344,8 @@
       "language": "Go",
       "stars": 1,
       "views14d": {
-        "count": 7,
-        "uniques": 2
+        "count": 1,
+        "uniques": 1
       }
     },
     {
@@ -454,7 +467,7 @@
     }
   ],
   "totals": {
-    "views14d": 44,
-    "uniques14d": 22
+    "views14d": 75,
+    "uniques14d": 27
   }
 }
