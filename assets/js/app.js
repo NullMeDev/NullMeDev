@@ -24,6 +24,13 @@ const LANG_COLORS = new Map([
   ["Shell", "mint"], ["Ruby", "rose"]
 ]);
 
+const LANG_EMOJIS = new Map([
+  ["Rust", "🦀"], ["Go", "🔷"], ["Python", "🐍"],
+  ["TypeScript", "💎"], ["JavaScript", "⚡"], ["C#", "🎯"],
+  ["PowerShell", "⚙️"], ["HTML", "🌐"], ["CSS", "🎨"],
+  ["Shell", "🐚"], ["Ruby", "💎"]
+]);
+
 function el(tag, className, text) {
   const e = document.createElement(tag);
   if (className) e.className = className;
@@ -66,12 +73,25 @@ function section(titleText) {
 
 function hero() {
   const wrap = el("div", "hero");
-  const title = el("h1", null, `🌟 ${SITE.name} 🌟`);
+  const title = el("h1", null, `✨ ${SITE.name} ✨`);
   const bio = el("div", "subtitle", SITE.bio);
+  
+  // Add decorative emoji elements
+  const decorTop = el("div");
+  decorTop.style.position = "absolute";
+  decorTop.style.top = "20px";
+  decorTop.style.left = "50%";
+  decorTop.style.transform = "translateX(-50%)";
+  decorTop.style.fontSize = "24px";
+  decorTop.style.opacity = "0.6";
+  decorTop.textContent = "🌟 💫 ⭐";
+  
   const contacts = el("div", "pills");
   contacts.appendChild(pill(`📧 ${SITE.email}`));
   contacts.appendChild(pill(`📍 ${SITE.location}`));
   contacts.appendChild(pill(`🌐 ${SITE.website}`));
+  
+  wrap.appendChild(decorTop);
   wrap.appendChild(title);
   wrap.appendChild(bio);
   wrap.appendChild(contacts);
@@ -89,23 +109,43 @@ function featuredCards() {
   const grid = el("div", "grid");
   FEATURED.forEach(f => {
     const c = el("div", "card");
+    
+    // Add emoji based on language using shared map
+    const emoji = LANG_EMOJIS.get(f.lang) || "✨";
+    
+    const nameWrap = el("div");
+    nameWrap.style.display = "flex";
+    nameWrap.style.alignItems = "center";
+    nameWrap.style.gap = "8px";
+    nameWrap.style.marginBottom = "8px";
+    
+    const emojiSpan = el("span");
+    emojiSpan.textContent = emoji;
+    emojiSpan.style.fontSize = "1.5rem";
+    
     const name = el("div", null, f.name);
     name.style.fontWeight = "700";
-    name.style.marginBottom = "6px";
+    name.style.fontSize = "1.1rem";
+    
+    nameWrap.appendChild(emojiSpan);
+    nameWrap.appendChild(name);
+    
     const meta = el("div", "badges");
     const color = LANG_COLORS.get(f.lang) || "mint";
     meta.appendChild(iconDot(color));
     meta.appendChild(badge(f.lang, color));
     if (f.note) meta.appendChild(badge(f.note, "pink"));
-    c.appendChild(name);
+    c.appendChild(nameWrap);
     c.appendChild(meta);
     if (f.url && !f.private) {
-      const link = el("div", "muted", "Public repository");
+      const link = el("div", "muted", "✅ Public repository");
+      link.style.marginTop = "8px";
       c.style.cursor = "pointer";
       c.addEventListener("click", () => window.open(f.url, "_blank"));
       c.appendChild(link);
     } else {
-      const link = el("div", "muted", "Not publicly accessible");
+      const link = el("div", "muted", "🔒 Not publicly accessible");
+      link.style.marginTop = "8px";
       c.appendChild(link);
     }
     grid.appendChild(c);
@@ -127,13 +167,26 @@ function kpiCard(label, value) {
 function projectCard(p) {
   const c = el("div", "card");
   
-  // Title with better styling
+  // Use shared emoji mapping
+  const emoji = LANG_EMOJIS.get(p.language) || "📦";
+  
+  // Title with better styling and emoji
   const titleWrap = el("div");
-  titleWrap.style.marginBottom = "8px";
+  titleWrap.style.marginBottom = "10px";
+  titleWrap.style.display = "flex";
+  titleWrap.style.alignItems = "center";
+  titleWrap.style.gap = "8px";
+  
+  const emojiSpan = el("span");
+  emojiSpan.textContent = emoji;
+  emojiSpan.style.fontSize = "1.3rem";
+  
   const title = el("div", null, p.name);
   title.style.fontWeight = "700";
-  title.style.fontSize = "1.1rem";
+  title.style.fontSize = "1.15rem";
   title.style.color = "var(--ink)";
+  
+  titleWrap.appendChild(emojiSpan);
   titleWrap.appendChild(title);
   
   // Add private badge if private
@@ -148,8 +201,8 @@ function projectCard(p) {
   // Description with better handling
   const descText = p.description || (p.private ? "Private project showcasing programming capabilities" : "Exploring new ideas and concepts");
   const desc = el("div", "muted", descText);
-  desc.style.marginBottom = "12px";
-  desc.style.lineHeight = "1.5";
+  desc.style.marginBottom = "14px";
+  desc.style.lineHeight = "1.6";
   
   // Metadata badges
   const meta = el("div", "badges");
@@ -171,14 +224,15 @@ function projectCard(p) {
     c.style.cursor = "pointer";
     c.addEventListener("click", () => window.open(p.html_url, "_blank"));
     const link = el("div", "muted");
-    link.style.marginTop = "8px";
-    link.style.fontSize = "0.8125rem";
+    link.style.marginTop = "10px";
+    link.style.fontSize = "0.85rem";
+    link.style.fontWeight = "550";
     link.textContent = "→ View on GitHub";
     c.appendChild(link);
   } else if (p.private) {
     const mut = el("div", "muted");
-    mut.style.marginTop = "8px";
-    mut.style.fontSize = "0.8125rem";
+    mut.style.marginTop = "10px";
+    mut.style.fontSize = "0.85rem";
     mut.textContent = "🔒 Private repository";
     c.appendChild(mut);
   }
