@@ -24,6 +24,13 @@ const LANG_COLORS = new Map([
   ["Shell", "mint"], ["Ruby", "rose"]
 ]);
 
+const LANG_EMOJIS = new Map([
+  ["Rust", "🦀"], ["Go", "🔷"], ["Python", "🐍"],
+  ["TypeScript", "💎"], ["JavaScript", "⚡"], ["C#", "🎯"],
+  ["PowerShell", "⚙️"], ["HTML", "🌐"], ["CSS", "🎨"],
+  ["Shell", "🐚"], ["Ruby", "💎"]
+]);
+
 function el(tag, className, text) {
   const e = document.createElement(tag);
   if (className) e.className = className;
@@ -103,14 +110,8 @@ function featuredCards() {
   FEATURED.forEach(f => {
     const c = el("div", "card");
     
-    // Add emoji based on language
-    const emojiMap = {
-      "Rust": "🦀",
-      "Go": "🔷",
-      "Python": "🐍",
-      "TypeScript": "💎"
-    };
-    const emoji = emojiMap[f.lang] || "✨";
+    // Add emoji based on language using shared map
+    const emoji = LANG_EMOJIS.get(f.lang) || "✨";
     
     const nameWrap = el("div");
     nameWrap.style.display = "flex";
@@ -166,20 +167,8 @@ function kpiCard(label, value) {
 function projectCard(p) {
   const c = el("div", "card");
   
-  // Add emoji decoration based on language
-  const emojiMap = {
-    "Rust": "🦀",
-    "Go": "🔷",
-    "Python": "🐍",
-    "TypeScript": "💎",
-    "JavaScript": "⚡",
-    "C#": "🎯",
-    "PowerShell": "⚙️",
-    "HTML": "🌐",
-    "CSS": "🎨",
-    "Shell": "🐚"
-  };
-  const emoji = emojiMap[p.language] || "📦";
+  // Use shared emoji mapping
+  const emoji = LANG_EMOJIS.get(p.language) || "📦";
   
   // Title with better styling and emoji
   const titleWrap = el("div");

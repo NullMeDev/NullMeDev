@@ -69,7 +69,7 @@ html, body {
   position: relative;
 }
 
-html::before {
+body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -147,6 +147,7 @@ a:hover {
   text-shadow: 0 4px 12px rgba(167, 139, 250, 0.3);
   animation: shimmer 3s ease-in-out infinite;
   background-size: 200% 200%;
+  will-change: background-position;
 }
 
 .hero .subtitle {
@@ -204,6 +205,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   animation: shimmer 4s ease-in-out infinite;
+  will-change: transform, background-position;
 }
 
 .btn::before {
