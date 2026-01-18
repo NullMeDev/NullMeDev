@@ -1,7 +1,7 @@
 const OWNER = "NullMeDev";
 const SITE = {
   name: "NullMeDev",
-  bio: "Just here having fun, coming up with some ideas and making them into programs.",
+  bio: "Full-stack developer with expertise in systems programming, web development, and automation. Passionate about building secure, efficient, and innovative solutions across multiple programming languages.",
   location: "USA",
   email: "null@nullme.lol",
   website: "https://nullme.lol",
@@ -20,7 +20,8 @@ const FEATURED = [
 const LANG_COLORS = new Map([
   ["Rust", "peach"], ["Go", "mint"], ["Python", "sky"],
   ["TypeScript", "lavender"], ["JavaScript", "peach"], ["C#", "pink"],
-  ["PowerShell", "sky"], ["HTML", "peach"]
+  ["PowerShell", "sky"], ["HTML", "rose"], ["CSS", "lavender"],
+  ["Shell", "mint"], ["Ruby", "rose"]
 ]);
 
 function el(tag, className, text) {
@@ -47,11 +48,12 @@ function iconDot(colorName) {
   dot.style.height = "10px";
   dot.style.borderRadius = "999px";
   const map = {
-    pink: "#ffd5ea", lavender: "#e9dcff", mint: "#d9fff2",
-    sky: "#d9f2ff", peach: "#ffe5d1"
+    pink: "#fce7f3", lavender: "#ede9fe", mint: "#d1fae5",
+    sky: "#dbeafe", peach: "#fed7aa", rose: "#ffe4e6"
   };
-  dot.style.background = map[colorName] || "#eee";
-  dot.style.border = "1px solid rgba(0,0,0,0.06)";
+  dot.style.background = map[colorName] || "#f3f4f6";
+  dot.style.border = "1px solid rgba(0,0,0,0.08)";
+  dot.style.boxShadow = "0 1px 3px rgba(0,0,0,0.06)";
   return dot;
 }
 
@@ -124,19 +126,43 @@ function kpiCard(label, value) {
 
 function projectCard(p) {
   const c = el("div", "card");
+  
+  // Title with better styling
+  const titleWrap = el("div");
+  titleWrap.style.marginBottom = "8px";
   const title = el("div", null, p.name);
   title.style.fontWeight = "700";
-  const desc = el("div", "muted", p.description || "No description");
+  title.style.fontSize = "1.1rem";
+  title.style.color = "var(--ink)";
+  titleWrap.appendChild(title);
+  
+  // Add private badge if private
+  if (p.private) {
+    const privateBadge = el("span", "badge pink");
+    privateBadge.textContent = "🔒 Private";
+    privateBadge.style.marginLeft = "8px";
+    privateBadge.style.fontSize = "0.75rem";
+    titleWrap.appendChild(privateBadge);
+  }
+  
+  // Description with better handling
+  const descText = p.description || (p.private ? "Private project showcasing programming capabilities" : "Exploring new ideas and concepts");
+  const desc = el("div", "muted", descText);
+  desc.style.marginBottom = "12px";
+  desc.style.lineHeight = "1.5";
+  
+  // Metadata badges
   const meta = el("div", "badges");
   const color = LANG_COLORS.get(p.language) || "mint";
   meta.appendChild(iconDot(color));
   if (p.language) meta.appendChild(badge(p.language, color));
-  if (typeof p.stars === "number") meta.appendChild(badge(`⭐ ${p.stars}`, "sky"));
-  if (p.views14d && typeof p.views14d.count === "number")
+  if (typeof p.stars === "number" && p.stars > 0) meta.appendChild(badge(`⭐ ${p.stars}`, "sky"));
+  if (p.views14d && typeof p.views14d.count === "number" && p.views14d.count > 0)
     meta.appendChild(badge(`👁️ ${p.views14d.count}`, "lavender"));
-  if (p.views14d && typeof p.views14d.uniques === "number")
+  if (p.views14d && typeof p.views14d.uniques === "number" && p.views14d.uniques > 0)
     meta.appendChild(badge(`👥 ${p.views14d.uniques}`, "peach"));
-  c.appendChild(title);
+  
+  c.appendChild(titleWrap);
   c.appendChild(desc);
   c.appendChild(meta);
 
@@ -144,12 +170,97 @@ function projectCard(p) {
   if (isClickable) {
     c.style.cursor = "pointer";
     c.addEventListener("click", () => window.open(p.html_url, "_blank"));
-  } else {
-    const mut = el("div", "muted", "No external link available");
-    mut.style.marginTop = "6px";
+    const link = el("div", "muted");
+    link.style.marginTop = "8px";
+    link.style.fontSize = "0.8125rem";
+    link.textContent = "→ View on GitHub";
+    c.appendChild(link);
+  } else if (p.private) {
+    const mut = el("div", "muted");
+    mut.style.marginTop = "8px";
+    mut.style.fontSize = "0.8125rem";
+    mut.textContent = "🔒 Private repository";
     c.appendChild(mut);
   }
   return c;
+}
+
+function capabilitiesSection(projects) {
+  const sec = section("🚀 Programming Capabilities");
+  
+  // Analyze projects to extract capabilities
+  const langCount = new Map();
+  const privateCount = projects.filter(p => p.private).length;
+  const publicCount = projects.filter(p => !p.private).length;
+  const totalProjects = projects.length;
+  
+  projects.forEach(p => {
+    if (p.language) {
+      langCount.set(p.language, (langCount.get(p.language) || 0) + 1);
+    }
+  });
+  
+  // Create capabilities summary
+  const summary = el("div");
+  summary.style.marginBottom = "16px";
+  
+  const intro = el("div", "muted");
+  intro.style.fontSize = "15px";
+  intro.style.lineHeight = "1.6";
+  intro.textContent = `Portfolio of ${totalProjects} projects (${publicCount} public, ${privateCount} private) demonstrating expertise across multiple programming languages and domains including systems programming, web development, automation, security tools, and infrastructure.`;
+  summary.appendChild(intro);
+  
+  // Language breakdown
+  const langBreakdown = el("div");
+  langBreakdown.style.marginTop = "12px";
+  const langTitle = el("div");
+  langTitle.style.fontWeight = "600";
+  langTitle.style.marginBottom = "8px";
+  langTitle.textContent = "💡 Language Distribution:";
+  langBreakdown.appendChild(langTitle);
+  
+  const langBadges = el("div", "badges");
+  const sortedLangs = Array.from(langCount.entries())
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 8); // Top 8 languages
+  
+  sortedLangs.forEach(([lang, count]) => {
+    const color = LANG_COLORS.get(lang) || "mint";
+    const text = `${lang} (${count} ${count === 1 ? 'project' : 'projects'})`;
+    langBadges.appendChild(badge(text, color));
+  });
+  langBreakdown.appendChild(langBadges);
+  summary.appendChild(langBreakdown);
+  
+  // Key areas of expertise
+  const expertise = el("div");
+  expertise.style.marginTop = "12px";
+  const expTitle = el("div");
+  expTitle.style.fontWeight = "600";
+  expTitle.style.marginBottom = "8px";
+  expTitle.textContent = "🎯 Areas of Expertise:";
+  expertise.appendChild(expTitle);
+  
+  const expertiseList = el("div", "badges");
+  const areas = [
+    "Systems Programming",
+    "Web Development",
+    "API Development",
+    "Security Tools",
+    "Automation & Scripting",
+    "Data Processing",
+    "CLI Applications",
+    "Full-Stack Development"
+  ];
+  
+  areas.forEach(area => {
+    expertiseList.appendChild(badge(area, "lavender"));
+  });
+  expertise.appendChild(expertiseList);
+  summary.appendChild(expertise);
+  
+  sec.root.appendChild(summary);
+  return sec.root;
 }
 
 async function loadData() {
@@ -168,8 +279,12 @@ async function loadData() {
     const kpiWrap = el("div", "kpi");
     kpiWrap.appendChild(kpiCard("👁️ Total views", data.totals.views14d || 0));
     kpiWrap.appendChild(kpiCard("👥 Unique visitors", data.totals.uniques14d || 0));
+    kpiWrap.appendChild(kpiCard("📦 Total Projects", data.projects.length || 0));
     kpiSection.appendChild(kpiWrap);
     container.appendChild(kpiSection);
+
+    // Programming Capabilities
+    container.appendChild(capabilitiesSection(data.projects || []));
 
     // Featured
     const featuredSection = section("⭐ Featured Projects");
